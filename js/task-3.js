@@ -13,6 +13,7 @@ function  handleSubmit(){
         nameOutput.textContent = greeting;
     }
 }
-    
+
+form.reset();
 
            
