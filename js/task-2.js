@@ -28,10 +28,10 @@ const images = [
 
 images.forEach(imgs => {
     const img = document.createElement('img');
-  
         img.setAttribute("url", imgs.url);
         img.setAttribute("alt", imgs.alt);
+  
     const li = document.createElement('li');
-  li.appendChild(img);
-  gallerys.appendChild(li);
+    li.append(img);
+    gallerys.append(li);
 })
