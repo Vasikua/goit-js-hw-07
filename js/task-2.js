@@ -33,5 +33,6 @@ images.forEach(imgs => {
   
     const li = document.createElement('li');
     li.append(img);
-    gallerys.append(li);
+  gallerys.append(li);
+
 })

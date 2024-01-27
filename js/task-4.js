@@ -5,9 +5,8 @@ loginForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
     event.preventDefault();
-    const form = event.target;
-    const email = form.elements.email.value;
-    const password = form.elements.password.value;
+    const email = event.target.elements.email.value;
+    const password = event.target.elements.password.value;
     const baseEmail = {};
         if (email !== "" || password !== "") {
             baseEmail.email = email.trim();
