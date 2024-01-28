@@ -22,7 +22,9 @@ function createBoxes() {
   boxSize.style.width = `${30 + i * 10}px`; 
   boxSize.style.height = `${30 + i * 10}px`;
   boxSize.style.backgroundColor = getRandomHexColor();
+      
   boxesCreateContainer.append(boxSize);
+    
     }
   // reset input field  
   input.value =''; 
