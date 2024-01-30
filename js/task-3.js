@@ -2,18 +2,19 @@
 const nameInput = document.getElementById('name-input');
 const nameOutput = document.getElementById('name-output');
 
-nameInput.addEventListener('input',  handleSubmit);
+nameInput.addEventListener('input', updateGreeting);
 
-function  handleSubmit(){
+function updateGreeting(){
+    
     const greeting = nameInput.value.trim();
-  
-    if(greeting ===''){
+    if (greeting === '') {
+        
         nameOutput.textContent = 'Anonymous';
     } else {
+
         nameOutput.textContent = greeting;
     }
 }
 
-form.reset();
 
            

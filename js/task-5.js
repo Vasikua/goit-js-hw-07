@@ -1,16 +1,19 @@
-const changeColbtn = document.querySelector('.change-color');
-const span = document.querySelector('.color');
+const changeColorButton = document.querySelector('.change-color');
+const colorValueSpan = document.querySelector('.color');
 
-changeColbtn.addEventListener('click', changeColor);
+changeColorButton.addEventListener('click', changeColor);
 
 function changeColor() {
-    const colorNow = getRandomHexColor();
-    document.body.style.backgroundColor = colorNow;
-  span.textContent = document.body.style.backgroundColor.value;
-   
-    function getRandomHexColor() {
-        return `#${Math.floor(Math.random() * 16777215)
+    
+  const colorNow = getRandomHexColor();
+  document.body.style.backgroundColor = colorNow;
+  colorValueSpan.textContent = colorNow;;
+}
+
+function getRandomHexColor() {
+        
+  return `#${Math.floor(Math.random() * 16777215)
         .toString(16)
         .padStart(6, 0)}`;
-  }
 }
+  
