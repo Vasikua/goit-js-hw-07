@@ -1,0 +1,16 @@
+ul {
+  margin-left: 150px;
+  margin-top: 150px;
+}
+
+li {
+  font-style: italic;
+  list-style-type: none;
+  font-size: 25px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+li:hover {
+  scale: 1.01;
+}
